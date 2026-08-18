@@ -33,9 +33,16 @@ jobs:
             -DANDROID_PLATFORM=android-24 \
             -DCMAKE_BUILD_TYPE=Release
 
+      - name: Print real SDK headers (temporary debug step)
+        run: |
+          echo "===== ModMenu.hpp ====="
+          cat build/_deps/preloader_android-src/include/pl/ModMenu.hpp
+          echo "===== Mod.hpp ====="
+          cat build/_deps/preloader_android-src/include/pl/Mod.hpp
+
       - name: Build
         run: cmake --build build --config Release
-
+        
       - name: Package .levipack
         run: |
           mkdir -p dist
