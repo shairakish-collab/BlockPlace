@@ -1,0 +1,11 @@
+{
+  "type": "preload-native",
+  "name": "Random Block Placement",
+  "author": "you",
+  "version": "0.1.0",
+  "entry": "librandom_block_placement.so",
+  "minecraft_versions": [],
+  "icon": "icon.png",
+  "overwrite_files": [],
+  "overwrite_folders": []
+}
