@@ -17,7 +17,7 @@ add_library(random_block_placement SHARED
     RandomBlockPlacementMod.cpp
 )
 
-target_link_libraries(random_block_placement PRIVATE preloader)
+target_link_libraries(random_block_placement PRIVATE preloader boost_pfr)
 
 set_target_properties(random_block_placement PROPERTIES
     OUTPUT_NAME "random_block_placement"
