@@ -14,7 +14,7 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(preloader_android)
 
 add_library(random_block_placement SHARED
-    src/RandomBlockPlacementMod.cpp
+    RandomBlockPlacementMod.cpp
 )
 
 target_link_libraries(random_block_placement PRIVATE preloader)
